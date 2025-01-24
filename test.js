@@ -257,3 +257,14 @@ function searchBinar(n){
 }
 
 console.log(searchBinar(43));
+
+function getSumPurchasesForThreeExclusiveBuyers(totalCosts) {
+  let sumOfCosts = 0;
+  totalCosts.forEach(cost => {
+    sumOfCosts += cost;
+  });
+  return sumOfCosts;
+}
+
+let arrayCosts = [10000, 20000, 30000];
+console.log(getSumPurchasesForThreeExclusiveBuyers(arrayCosts));
